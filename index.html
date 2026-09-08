@@ -1,6 +1,33 @@
-<iframe 
-  src="https://script.google.com/a/macros/sungrove.co.jp/s/AKfycbz5e7_fIdBxLSi-LHPthnMpn2GA2jybA5pdUBIfMsHR7EEBgwzHtKZrVUDLkwTGUA/exec" 
-  width="100%" 
-  height="100%" <!-- 縦に十分な長さを確保 -->
-  style="border: none; overflow: hidden;"> <!-- スクロールを強制非表示 -->
-</iframe>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日の日報</title>
+  <style>
+    /* 画面全体の余白をなくし、高さを100%に固定 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* 親ページの不要なスクロールバーを非表示 */
+    }
+
+    /* iframeを画面いっぱいに広げ、隙間をなくす */
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block; /* インライン要素特有の下部の隙間を消す */
+    }
+  </style>
+</head>
+<body>
+
+  <iframe 
+    src="https://script.google.com/a/macros/sungrove.co.jp/s/AKfycbz5e7_fIdBxLSi-LHPthnMpn2GA2jybA5pdUBIfMsHR7EEBgwzHtKZrVUDLkwTGUA/exec">
+  </iframe>
+
+</body>
+</html>
